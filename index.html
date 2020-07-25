@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8cbc27611e.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/logo.png" type="image/icon type">
+  <title>Museek</title>
+</head>
+<body>
+  <!-------------Navbar---------------->
+  <nav class="navbar navbar-light bg-light my-0 py-0">
+    <a class="navbar-brand" href="#">
+      <i class="fab fa-napster"></i> Museek
+    </a>
+    <ul class="navbar-nav flex-row">
+      <li id="phonequeue" class="nav-item mx-2">
+        <a class="nav-link py-0" href="#queue" style="font-size: 1.5rem;">
+          <i class="fas fa-list my-0"></i>
+        </a>
+      </li>
+      
+      <li class="nav-item mx-2">
+        <a class="nav-link py-0" href="#" style="font-size: 1.5rem;">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      
+      <li class="nav-item mx-2">
+        <a class="nav-link py-0" href="#" style="font-size: 1.5rem;">
+          <i class="fas fa-bell"></i>
+        </a>
+      </li>
+      
+      <li class="nav-item mx-2">
+        <a class="nav-link py-0" href="#" style="font-size: 1.5rem;">
+          <i class="fas fa-heart"></i>
+        </a>
+      </li>
+      
+      <li class="nav-item mx-2">
+        <a class="nav-link py-0" href="#" style="font-size: 1.5rem;">
+          <i class="fas fa-user-circle my-0"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!----------------------- Content ------------------------->
+  <section class="row mt-4">
+    <!--------------------- Main Conent --------------------->
+    <section id="main" class="col-12 col-md-9">
+      
+      <div id="IntroBanner" class="container Banner">
+        <div class="mySlides">
+          <span class="d-flex">
+            <img src="images/recentlyadded.jpg" alt="..." class="img-thumbnail">
+            <img src="images/country.jpeg" alt="..." class="img-thumbnail">
+            <img src="images/youngandfree.jpg" alt="..." class="img-thumbnail">
+          </span>
+        </div>
+        <div class="mySlides">
+          <span class="d-flex">
+            <img src="images/danceandedm.jpeg" alt="..." class="img-thumbnail">
+            <img src="images/chill.jpeg" alt="..." class="img-thumbnail">
+            <img src="images/gymtime.jpg" alt="..." class="img-thumbnail">
+          </span>
+        </div>
+        <div class="mySlides">
+          <span class="d-flex">
+            <img src="images/restless.spirit.jpg" alt="..." class="img-thumbnail">
+            <img src="images/upbeat.jpeg" alt="..." class="img-thumbnail">
+            <img src="images/transformative.jpg" alt="..." class="img-thumbnail">
+          </span>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      
+      <div id="latestReleases" class="container ml-3 mt-5 bg-light pt-3">
+        <h2>Latest Releases</h2>
+        <div class="d-flex justify-content-around pt-3 pb-5">
+          <div class="latest d-flex" style="width: 15%; border-radius: 5px;">
+            <img src="images/fottyseven.jpg" alt="..." class="img-thumbnail order-0">
+            <button class="play order-1">
+              <i class="fas fa-play" id="icons1" onclick="changeIcon(id)" ></i>
+            </button>
+          </div>
+          <div class="latest d-flex" style="width: 15%; border-radius: 5px;">
+            <img src="images/12.jpg" alt="..." class="img-thumbnail order-0">
+            <button class="play order-1">
+              <i class="fas fa-play" id="icons2" onclick="changeIcon(id)" ></i>
+            </button>
+          </div>
+          <div class="latest d-flex" style="width: 15%; border-radius: 5px;">
+            <img src="images/untitled.jpg" alt="..." class="img-thumbnail order-0">
+            <button class="play order-1">
+              <i class="fas fa-play" id="icons3" onclick="changeIcon(id)" ></i>
+            </button>
+          </div>
+          <div class="latest d-flex" style="width: 15%; border-radius: 5px;">
+            <img src="images/4.jpg" alt="..." class="img-thumbnail order-0">
+            <button class="play order-1">
+              <i class="fas fa-play" id="icons4" onclick="changeIcon(id)" ></i>
+            </button>
+          </div>
+          <div class="latest d-flex" style="width: 15%; border-radius: 5px;">
+            <img src="images/basicbars.jpg" alt="..." class="img-thumbnail order-0">
+            <button class="play order-1">
+              <i class="fas fa-play" id="icons5" onclick="changeIcon(id)" ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="IntroBanner1" class="container Banner1 mt-4 align-content-center">
+        <h2>Popular Artists</h2>
+        <div class="mySlides1">
+          <span class="d-flex">
+            <img src="images/a1.jpg" alt="..." class="img-thumbnail">
+            <img src="images/a2.jpg" alt="..." class="img-thumbnail">
+            <img src="images/a3.jpg" alt="..." class="img-thumbnail">
+            <img src="images/a4.jpg" alt="..." class="img-thumbnail">
+          </span>
+        </div>
+        <div class="mySlides1">
+          <span class="d-flex">
+            <img src="images/a5.jpg" alt="..." class="img-thumbnail">
+            <img src="images/a6.jpg" alt="..." class="img-thumbnail">
+            <img src="images/a7.jpg" alt="..." class="img-thumbnail">
+            <img src="images/a8.jpeg" alt="..." class="img-thumbnail">
+          </span>
+        </div>
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot1" onclick="currentSlide1(1)"></span>
+        <span class="dot1" onclick="currentSlide1(2)"></span>
+      </div>
+      
+      <div id="latestReleases" class="container ml-3 mt-5 bg-light pt-3">
+        <h2>Previously Streamed</h2>
+        <div class="justify-content-around pt-3 pb-2 align-top">
+
+          <div class="d-flex justify-content-around mb-3">
+            <div class="latest d-flex" style="width: 15%; border-radius: 35px;">
+              <img src="images/fottyseven.jpg" alt="..." class="img-thumbnail order-0" style="border-radius: 35px;">
+              <button class="play order-1">
+                <i class="fas fa-play" id="icons6" onclick="changeIcon(id)" ></i>
+              </button>
+            </div>
+            <div class="latest d-flex" style="width: 15%; border-radius: 35px;">
+              <img src="images/12.jpg" alt="..." class="img-thumbnail order-0" style="border-radius: 35px;">
+              <button class="play order-1">
+                <i class="fas fa-play" id="icons7" onclick="changeIcon(id)" ></i>
+              </button>
+            </div>
+            <div class="latest d-flex" style="width: 15%; border-radius: 35px;">
+              <img src="images/untitled.jpg" alt="..." class="img-thumbnail order-0" style="border-radius: 35px;">
+              <button class="play order-1">
+                <i class="fas fa-play" id="icons8" onclick="changeIcon(id)" ></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-around mb-3">
+            <div class="latest d-flex" style="width: 15%; border-radius: 35px;">
+              <img src="images/4.jpg" alt="..." class="img-thumbnail order-0" style="border-radius: 35px;">
+              <button class="play order-1">
+                <i class="fas fa-play" id="icons9" onclick="changeIcon(id)" ></i>
+              </button>
+            </div>
+            <div class="latest d-flex" style="width: 15%; border-radius: 35px;">
+              <img src="images/raftaar.jpg" alt="..." class="img-thumbnail order-0" style="border-radius: 35px;">
+              <button class="play order-1">
+                <i class="fas fa-play" id="icons10" onclick="changeIcon(id)" ></i>
+              </button>
+            </div>
+            <div class="latest d-flex" style="width: 15%; border-radius: 35px;">
+              <img src="images/eminem.jpg" alt="..." class="img-thumbnail order-0" style="border-radius: 35px;">
+              <button class="play order-1">
+                <i class="fas fa-play" id="icons11" onclick="changeIcon(id)" ></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--------------------- Queue --------------------------->
+    <section id="queue" class="col-md-3">
+      <h2>QUEUE</h2>
+      <div id="divv">
+        <ul class="pl-0 list-group list-group-flush" style="list-style: none;">
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/bryan-adams.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever1" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Here I Am</h5>
+                    <p class="card-text">Bryan Adams</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/11.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever2" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Pagal Hai Kya</h5>
+                    <p class="card-text">Fotty Seven</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/10.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever3" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Galat Launde</h5>
+                    <p class="card-text">Fotty Seven</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/9.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever4" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Zero Farak</h5>
+                    <p class="card-text">Fotty Seven</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/8.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever5" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Chaud</h5>
+                    <p class="card-text">Fotty Seven</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/2.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever6" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Havana</h5>
+                    <p class="card-text">Camila Cabello</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/1.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever7" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Starboy</h5>
+                    <p class="card-text">The Weeknd</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/6.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever8" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Bad Girl</h5>
+                    <p class="card-text">Usher</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/5.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever9" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">I Like It</h5>
+                    <p class="card-text">Enrique Iglesias</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/7.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever10" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Finesse</h5>
+                    <p class="card-text">Drake</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="qshadow" style="max-width: 540px;">
+              <div class="row no-gutters order-0">
+                <div class="col-2 col-md-5 col-lg-4">
+                  <img src="images/3.jpg" class="card-img" alt="...">
+                  <button class="play-icon order-1">
+                    <i class="fas fa-play" id="iconsWhatever11" onclick="changeIcon(id)" ></i>
+                  </button>
+                </div>
+                <div class="col-10 col-md-5 col-lg-8">
+                  <div id="album" class="card-body" style="padding:0px">
+                    <h5 class="card-title">Side To Side</h5>
+                    <p class="card-text">Ariana Grande</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <nav id="play-bar" class="navbar navbar-light bg-light">
+    <ul class="navbar-nav flex-row justify-content-between">
+      <li class="nav-item display-inline">
+        <ul id="play-name" class="flex-row">
+          <li>
+            <img src="images/bryan-adams.jpg" alt="">
+          </li>
+          <li>
+            <div class="container" style="display: block;">
+              <span>Here I Am &nbsp; <i class="far fa-heart"></i> &nbsp;<i class="fas fa-ban"></i> <br></span> <span>Bryan Adams</span>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <div class="bar-slider justify-content-center">
+          <p style="margin-bottom: 0.2rem;"><i class="fas fa-sync"></i> <i class="fas fa-step-backward"></i> <i class="far fa-pause-circle"></i> <i class="fas fa-step-forward"></i> <i class="fas fa-redo"></i></p>
+          <p id="slider" style="margin-bottom: 0rem;"> 1:39 <input id="slider" type="range"> 4:44</p>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="bar-right">
+          <i class="fas fa-list"></i> <i class="fas fa-desktop"></i> <i class="fas fa-volume-up"></i> <input id="slider-two" type="range" name="">
+        </div>
+      </li>
+    </ul>
+  </nav>
+  
+  
+  
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
